@@ -1,10 +1,10 @@
 {% assign translation = site.data[page.lang] %}
-<div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
+<div class="col-sm-3 col-sm-offset-1 blog-sidebar"><!--右上栏-->
+          <div class="sidebar-module sidebar-module-inset"><!--关于-->
             <h4>{{ translation.about }}</h4>
             <p>{{ translation.siteabout }}</p>
           </div>
-          <div class="sidebar-module">
+          <div class="sidebar-module"><!--文章归档-->
             <h4>{{ translation.archivearticle }}</h4>
             <ol class="list-unstyled">
                   {% for post in site.posts  %}
@@ -24,13 +24,11 @@
                 {% endfor %}
             </ol>
           </div>
-          <div class="sidebar-module">
+          <div class="sidebar-module"><!--其他位置-->
             <h4>{{ translation.otherplace }}</h4>
             <ol class="list-unstyled">
-              <li><a href="https://github.com/joytou/">GitHub</a></li>
-			  <li><a href="https://coding.net/u/joytou">Coding</a></li>
-              <li><a href="http://1540294142.qzone.qq.com/">Qzone</a></li>
-              <li><a href="mailto:joytou.wu@qq.com">E-mail</a></li>
+              <li><a href="https://github.com/GiantFly/">GitHub</a></li>
+              <li><a href="mailto:giantfly233@gmail.com">E-mail</a></li>
             </ol>
           </div>
         </div>
